@@ -1,0 +1,74 @@
+@import url("https://use.typekit.net/vgx2vhc.css");
+
+:root {
+  font-family: "din-2014", sans-serif;
+  
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  --light-background: hsl(40, 4%, 96%);
+
+  --gold-color: #fcc861;
+  --silver-color: #e5e5e5;
+  --bronze-color: #dcb386;
+  --gold-light-color: hsl(42, 98%, 92%);
+  --silver-light-color: hsl(0, 0%, 94%);
+  --bronze-light-color: hsl(31, 92%, 92%);
+  --gold-border-color: #d09c33;
+  --silver-border-color: #939393;
+  --bronze-border-color: #a58868;
+  --gold-text-color: #322407;
+  --silver-text-color: #2c2c2c;
+  --bronze-text-color: #4d4032;
+  --title-font-size: 48px;
+  --area-color: steelblue;
+  --header-image-size: 280px
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* color: #213547;
+    background-color: #ffffff; */    
+  }
+}
+
+@media (width >= 500px) {
+  :root {
+    --title-font-size: 48px;  
+    --header-image-size: 160px
+  }
+}
+
+@media (width < 500px) {
+  :root {
+    --title-font-size: 28px;  
+    --header-image-size: 80px
+  }
+
+  #app {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: hsl(208, 16%, 96%); */
+  background-color: var(--light-background);
+  /* padding: 0 40px; */  
+}
+
